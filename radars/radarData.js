@@ -1,12 +1,12 @@
 //This is the title for your window tab, and your Radar
-document.title = "Kantegas TechRadar";
+document.title = "";
 
 
 //This is the concentic circles that want on your radar
 var radar_arcs = [
   {'r':120,'name':'Bruk'}
   ,{'r':240,'name':'Vurder'}
-  ,{'r':360,'name':'AvstÃ¥'}
+  ,{'r':360,'name':'Avstå'}
   // ,{'r':500,'name':'Possible Extra if you want it'}
 ];
 
@@ -44,7 +44,7 @@ var radar_arcs = [
 // - Hold: things that are getting attention in the industry, but not ready for use; sometimes they are not mature enough yet, sometimes they are irredeemably flawed
 //      Note: there's no "avoid" ring, but throw things in the hold ring that people shouldn't use.
 
-var h = 800;
+var h = 900;
 var w = 1200;
 
 var radar_data = [
@@ -56,7 +56,7 @@ var radar_data = [
       {"name":"Continuous delivery", "pc":{"r":80,"t":135},"movement":"c"},
     ]
   },
-  { "quadrant": "VerktÃ¸y",
+  { "quadrant": "Verktøy",
     "left": w-200+30,
     "top" : 18,
     "color" : "#587486",
@@ -88,7 +88,7 @@ var radar_data = [
       {"name":"Ember.JS", "pc":{"r":170,"t":230},"movement":"c"},
     ]
   },
-  { "quadrant": "SprÃ¥k",
+  { "quadrant": "Språk",
     "color" : "#B70062",
     "left"  : w-200+30,
     "top" :   (h/2 + 18),
