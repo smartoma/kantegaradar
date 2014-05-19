@@ -46,7 +46,7 @@ for (var i = 0; i < radar_data.length; i++) {
     .bottom(function(d) { var y = polar_to_raster(d.pc.r, d.pc.t)[1];                                 
                           console.log("name:" + d.name + ", y:" + y); 
                           return y;})
-    .title(function(d) { return d.name;})		 
+    .title(function(d) { return d.comment !== undefined ? d.name + " - " + d.comment : d.name})
     .cursor( function(d) { return ( d.url !== undefined ? "pointer" : "auto" ); })                                                            
     .event("click", function(d) { if ( d.url !== undefined ){self.location =  d.url}}) 
     .angle(45)
